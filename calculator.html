@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="calculator.js"></script>
+    <style>
+         body{
+            background-image: linear-gradient();
+         }
+        .buttons{
+            width: 100px;
+            height: 50px;
+            font-size: 15px;
+            border: none;
+            border-radius: 10px;
+            background-color: peachpuff;
+            box-shadow: inset 10px -10px 5px rgb(248, 117, 2);
+        }
+        #result_statement{
+            font-size: 30px;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <input type="number" id="num1" placeholder="Enter number one">
+    <input type="number" id="num2" placeholder="Enter number two">
+    <br><br>
+    <button class="buttons" onclick="performOperation('addition')">Addition</button>
+    <button class="buttons" onclick="performOperation('subtraction')">Subtraction</button>
+    <button class="buttons" onclick="performOperation('multiplication')">Multiplication</button>
+    <button class="buttons" onclick="performOperation('division')">Division</button>
+    <br><br>
+    <div id="result_statement"></div>
+    <br>
+    <button style="width: 70px; height:40px ; border: none; background-color: black; color: white; font-size: 20px;  border-radius: 10px;" onclick="resetCalculator()">Reset</button>
+</body>
+</html>
